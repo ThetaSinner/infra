@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "resources/file-content"
+]
+
+[workspace.dependencies]
+serde = "1"
+clap = "4"
