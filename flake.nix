@@ -16,7 +16,12 @@
         };
       in {
         devShells.default = pkgs.devshell.mkShell {
-          packages = with pkgs; [ git haskellPackages.ghc nixpkgs-fmt ];
+          packages = with pkgs; [
+            git
+            haskellPackages.ghc
+            haskellPackages.haskell-language-server
+            nixpkgs-fmt
+          ];
 
           commands = [{
             name = "flakefmt";
